@@ -9,12 +9,12 @@
 
 2. カレント・ディレクトを`line-liff-v2-starter`に変更します
     ```shell
-    cd line-liff-v2-starter{{copy}}
-    ```
+    cd line-liff-v2-starter
+    ```{{copy}}
 
 3. Node Package ManagerでNode.jsのライブラリをインストールします
    ```shell
-   npm install{{copy}}
-   ```
+   npm install
+   ```{{copy}}
 
 これで、ルートディレクトリにあるpackage.jsonに記載されたパッケージなどが一括でインストールされ、スターターアプリが動く環境が準備できました。
