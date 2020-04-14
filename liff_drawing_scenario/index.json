@@ -10,7 +10,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "herokuにアプリを展開する",
         "text": "step2.md"
       },
       {
@@ -39,7 +39,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "intro_code.sh"
     },
     "finish": {
       "text": "finish.md"
