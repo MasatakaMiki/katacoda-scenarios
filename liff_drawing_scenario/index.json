@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "LIFF v2 starter app を Cloneする",
+        "title": "LIFF v2 starter app をCloneする",
         "text": "step1.md"
       },
       {
@@ -28,14 +28,6 @@
       {
         "title": "Share Target Pickerを試してみる",
         "text": "step6.md"
-      },
-      {
-        "title": "Step 7",
-        "text": "step7.md"
-      },
-      {
-        "title": "Step 8",
-        "text": "step8.md"
       }
     ],
     "intro": {
