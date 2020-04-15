@@ -4,8 +4,10 @@
 herokuを使って、スターターアプリをデプロイした後、アプリをお絵描きアプリに改造します。<br>
 最後に2020年3月にリリースされた「Share Target Picker」にも触れています。<br>
 <br>
-【事前準備】
-*スキル開発にご自身のLINEアカウント（メールアドレス・パスワード）が必要になりますので、<a href="https://developers.line.me/console/" target="_blank">こちらのサイト</a>でログインできるかどうかを確認ください
-*Herokuにログインできるようにしておいてください(https://jp.heroku.com/free)
+<br>
+【事前準備】<br>
+・スキル開発にご自身のLINEアカウント（メールアドレス・パスワード）が必要になりますので、<a href="https://developers.line.me/console/" target="_blank">こちらのサイト</a>でログインできるかどうかを確認ください<br>
+・Herokuにログインできるようにしておいてください(https://jp.heroku.com/free)<br>
+<br>
 <br>
 それでは、START SENARIO ボタンを押して、はじめましょう！

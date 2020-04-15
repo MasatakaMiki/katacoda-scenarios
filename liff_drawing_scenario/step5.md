@@ -2,14 +2,14 @@
 今回は、すでに完成したアプリを上書きし、デプロイし直すという手順を行ったあと、具体的にどこを変更したのかを説明したいと思います。
 
 1. package.jsonにライブラリを2つ追加します<br>
-    *body-parser
-        ```shell
-        npm install body-parser
-        ```{{copy}}<br>
-    *date-utils
-        ```shell
-        npm install date-utils
-        ```{{copy}}
+    ・body-parser
+    ```shell
+    npm install body-parser
+    ```{{copy}}<br>
+    ・date-utils
+    ```shell
+    npm install date-utils
+    ```{{copy}}
 
 2. カレント・ディレクトリを変更します
     ```shell
@@ -44,7 +44,7 @@
     ```shell
     git commit -m "deploy oekaki app"
     ```{{copy}}
-    ```shell
+    ```shellw
     git push heroku master
     ```{{copy}}
 
