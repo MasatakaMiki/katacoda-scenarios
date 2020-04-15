@@ -13,7 +13,7 @@
     ```{{copy}}
 作成されたらURLが出力されていると思います。
 LIFFの作成時に必要となるので、控えておいてください。
-    `https://ldgq-handson-20200406-name.herokuapp.com`
+    `https://ldgq-handson-20200417-name.herokuapp.com`
 
 3. 前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます
     ```shell
