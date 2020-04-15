@@ -1,10 +1,10 @@
-LIFFの準備も整いました。それでは、herokuにアプリをデプロイ（展開）していきましょう
+LIFFの準備も整いました。herokuにアプリをデプロイ（展開）していきましょう。
 
 1. herokuの環境変数にLIFF IDを設定します
     ```shell
     heroku config:set MY_LIFF_ID={liff id}
     ```{{copy}}
-    <font color="red">※{liff id}部分は前のステップで控えたLIFF URLのLIFF ID部分だけを使用します。"{}"は除いて置き換えてください。</font>
+    <font color="red">※{liff id}部分は前のステップで控えたLIFF URLのLIFF ID部分だけを使用します。"{}"は除いて置き換えてください。</font><br>
     例）
     ```shell
     heroku config:set MY_LIFF_ID=1234567890-aBcdefGH
@@ -27,5 +27,5 @@ LIFFの準備も整いました。それでは、herokuにアプリをデプロ�
 
 3. LIFF URLにアクセスしてみましょう
 
-これでスターターアプリがデプロイされました。たくさんボタンがあるので、まずLog inして、色々クリックしてみてください。LIFFでできることが分かると思います。
+これでスターターアプリがデプロイされました。たくさんボタンがあるので、まずLog inして、色々クリックしてみてください。LIFFでできることが分かると思います。<br>
 次のステップからは、このアプリをお絵描きアプリに改造してみましょう。
