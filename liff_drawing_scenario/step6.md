@@ -12,12 +12,12 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
     vim ./public/oekaki.js
     ```{{copy}}
 ![vim](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0601_vim.jpg)
-|key|内容|
-|:--|:--|
-|i|挿入モード|
-|Esc|コマンドモード|
-|:wq(Enter)|保存して終了|
-|:q!(Enter)|保存せず終了|
+<table><tr><th>key</th><th>内容</th></tr>
+<tr><td>i</td><td>挿入モード</td></tr>
+<tr><td>Esc</td><td>コマンドモード</td></tr>
+<tr><td>:wq(Enter)</td><td>保存して終了</td></tr>
+<tr><td>:q!(Enter)</td><td>保存せず終了</td></tr>
+</table>
 
 3. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
     ```shell
@@ -31,3 +31,7 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
     ```{{copy}}
 
 4. 確認してみましょう
+
+以上で、今回のハンズオンはすべて終了です。
+皆さんも、LIFFのスターターアプリをベースに色々な面白いアプリを作ってみてくださいね！
+お疲れ様でした。
