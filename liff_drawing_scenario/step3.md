@@ -6,7 +6,7 @@
 2. プロバイダーを作成または既存のプロバイダーを選択します
 ![create_provider](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0301_create_provider.jpg)
 
-3. チャネルを作成します。<font color="red">この時、必ずLINEログインを選択してください。</font>
+3. チャネルを作成します。<font color="red">この時、必ず`LINEログイン`を選択してください。</font>
 ![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0302_create_channel.jpg)
 
 4. 各項目を埋めていきます<br>
