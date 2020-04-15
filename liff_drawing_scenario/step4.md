@@ -14,7 +14,7 @@ LIFFの準備も整いました。それでは、herokuにアプリをデプロ�
     heroku config
     ```{{copy}}
 
-2. gitでherokuデプロイします。gitのコマンドを3つ実行します。
+2. gitでherokuにデプロイします。gitのコマンドを3つ実行します。
     ```shell
     git add .
     ```{{copy}}
