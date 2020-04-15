@@ -1,25 +1,35 @@
 スターターアプリをお絵描きアプリに改造しましょう。<br>
 今回は、すでに完成したアプリを上書きし、デプロイし直すという手順を行ったあと、具体的にどこを変更したのかを説明したいと思います。
 
-1. カレント・ディレクトリを変更します
+1. package.jsonにライブラリを2つ追加します<b>
+    ・body-parser
+    ```shell
+    npm install body-parser
+    ```{{copy}}<br>
+    ・date-utils
+    ```shell
+    npm install date-utils
+    ```{{copy}}
+
+2. カレント・ディレクトリを変更します
     ```shell
     cd ..
     ```{{copy}}
 
-2. githubからお絵描きアプリのファイルをCloneします
+3. githubからお絵描きアプリのファイルをCloneします
     ```shell
     git clone https://github.com/MasatakaMiki/ldgq.git
     ```{{copy}}
 
-3. ファイルを上書きコピーします
+4. ファイルを上書きコピーします
     ```shell
     cp -f -r ./ldgq/202004_handson/oekaki-app/* ./line-liff-v2-starter
     ```{{copy}}
 
-4. 変更箇所の説明
+5. 変更箇所の説明
     <a href="" target="_blank"></a>
 
-5. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
+6. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
     ```shell
     git add .
     ```{{copy}}
@@ -30,7 +40,7 @@
     git push heroku master
     ```{{copy}}
 
-6. LIFF URLにアクセスしてみましょう
+7. LIFF URLにアクセスしてみましょう
 
 お絵描きアプリが動いたでしょうか？このようにスターターアプリである程度のひな形が準備されており、
 herokuを利用すると、簡単なアプリなら、あっという間にリリース＆動作確認を行うことができます。<br>
