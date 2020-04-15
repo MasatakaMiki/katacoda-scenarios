@@ -2,14 +2,14 @@
 今回は、すでに完成したアプリを上書きし、デプロイし直すという手順を行ったあと、具体的にどこを変更したのかを説明したいと思います。
 
 1. package.jsonにライブラリを2つ追加します<b>
-    ・body-parser
-    ```shell
-    npm install body-parser
-    ```{{copy}}<br>
-    ・date-utils
-    ```shell
-    npm install date-utils
-    ```{{copy}}
+    *body-parser
+        ```shell
+        npm install body-parser
+        ```{{copy}}<br>
+    *date-utils
+        ```shell
+        npm install date-utils
+        ```{{copy}}
 
 2. カレント・ディレクトリを変更します
     ```shell
@@ -27,7 +27,15 @@
     ```{{copy}}
 
 5. 変更箇所の説明
-    <a href="" target="_blank"></a>
+<a href="" target="_blank">https://github.com/MasatakaMiki/ldgq/tree/master/202004_handson/oekaki-app</a>
+<table><tr><th>ファイル</th><th>内容</th></tr>
+<tr><td>./public/index.html</td><td>お絵描きアプリに変更</td></tr>
+<tr><td>./public/imgs/*.png</td><td>ペンと消しゴムの画像</td></tr>
+<tr><td>./public/oekaki.css</td><td></td></tr>
+<tr><td>./public/oekaki.js</td><td>liff-starter.jsから</td></tr>
+<tr><td>./public/vconsole.min.js</td><td>便利</td></tr>
+<tr><td>./index.js</td><td>イメージファイルをimgの下に保存する関数を追加</td></tr>
+</table>
 
 6. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
     ```shell

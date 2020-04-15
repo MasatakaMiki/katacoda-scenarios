@@ -10,12 +10,12 @@
 ![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0302_create_channel.jpg)
 
 4. 各項目を埋めていきます<br>
-|項目|値|
-|:--|:--|
-|①チャネル名|LDGQ-LIFF-Handson|
-|②チャネル説明|LDGQ-LIFF-Handson|
-|③アプリタイプ|チェックを2つ入れる|
-|④メールアドレス|ご自身のメールアドレスを入力|
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①チャネル名</td><td>LDGQ-LIFF-Handson</td></tr>
+<tr><td>②チャネル説明</td><td>LDGQ-LIFF-Handson</td></tr>
+<tr><td>③アプリタイプ</td><td>チェックを2つ入れる</td></tr>
+<tr><td>④メールアドレス</td><td>ご自身のメールアドレスを入力</td></tr>
+</table>
 ![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0303_channel_setting.jpg)
 
 5. 同意にチェックし、作成ボタンをクリックします。必須項目が未入力だったり、同意にチェックがない場合、作成ボタンはクリックできません。<br>
@@ -26,13 +26,13 @@
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0305_create_liff.jpg)
 
 7. 各項目を埋めていきます<br>
-|項目|値|
-|:--|:--|
-|①LIFFアプリ名|LIFF-drawing|
-|②サイズ|Tall|
-|③エンドポイント|https://ldgq-handson-20200406-name.herokuapp.com|
-|④Scope|チェックを<font color="red">3つ</font>に入れる|
-|⑤ボットリンク機能|On(Normal)|
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①LIFFアプリ名</td><td>LIFF-drawing</td></tr>
+<tr><td>②サイズ</td><td>Tall</td></tr>
+<tr><td>③エンドポイント</td><td>https://ldgq-handson-20200417-name.herokuapp.com</td></tr>
+<tr><td>④Scope</td><td>チェックを<font color="red">3つ</font>に入れる</td></tr>
+<tr><td>⑤ボットリンク機能</td><td>On(Normal)</td></tr>
+</table>
 <font color="red">※エンドポイントは前のステップで控えておいたherokuのアプリのURLです</font><br>
 <font color="red">※Scopeは`すべて表示`をクリックしないと`chat_message.write`にチェックを入れることができないので注意</font>
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0306_liff_setting.jpg)
