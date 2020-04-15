@@ -10,7 +10,6 @@
 ![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0302_create_channel.jpg)
 
 4. 各項目を埋めていきます
-
 |項目|値|
 |:--|:--|
 |①チャネル名|LDGQ-LIFF-Handson|
@@ -26,7 +25,6 @@
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0305_create_liff.jpg)
 
 7. 各項目を埋めていきます
-
 |項目|値|
 |:--|:--|
 |①LIFFアプリ名|LIFF-drawing|
@@ -35,8 +33,8 @@
 |④Scope|チェックを<font color="red">3つ</font>に入れる|
 |⑤ボットリンク機能|On(Normal)|
 
-<font color="red">エンドポイントは前のステップで控えておいたherokuのアプリのURLです</font>
-<font color="red">Scopeは`すべて表示`をクリックしないと`chat_message.write`にチェックを入れることができないので注意</font>
+<font color="red">※エンドポイントは前のステップで控えておいたherokuのアプリのURLです</font>
+<font color="red">※Scopeは`すべて表示`をクリックしないと`chat_message.write`にチェックを入れることができないので注意</font>
 
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0306_liff_setting.jpg)
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0307_liff_setting.jpg)
