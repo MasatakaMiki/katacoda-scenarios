@@ -31,10 +31,10 @@
 <table><tr><th>ファイル</th><th>内容</th></tr>
 <tr><td>./public/index.html</td><td>お絵描きアプリに変更</td></tr>
 <tr><td>./public/imgs/*.png</td><td>ペンと消しゴムの画像</td></tr>
-<tr><td>./public/oekaki.css</td><td></td></tr>
-<tr><td>./public/oekaki.js</td><td>liff-starter.jsから</td></tr>
+<tr><td>./public/oekaki.css</td><td>スタイルシート</td></tr>
+<tr><td>./public/oekaki.js</td><td>liff-starter.jsをコピーして編集</td></tr>
 <tr><td>./public/vconsole.min.js</td><td>便利</td></tr>
-<tr><td>./index.js</td><td>イメージファイルをimgの下に保存する関数を追加</td></tr>
+<tr><td>./index.js</td><td>画像ファイルをimgの下に保存する関数を追加</td></tr>
 </table>
 
 6. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
