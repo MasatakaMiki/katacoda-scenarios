@@ -22,12 +22,16 @@
         "text": "step4.md"
       },
       {
-        "title": "スターターアプリを改造する",
+        "title": "LINEアプリで確認してみよう",
         "text": "step5.md"
       },
       {
-        "title": "Share Target Pickerを試してみる",
+        "title": "スターターアプリを改造する",
         "text": "step6.md"
+      },
+      {
+        "title": "Share Target Pickerを試してみる",
+        "text": "step7.md"
       }
     ],
     "intro": {

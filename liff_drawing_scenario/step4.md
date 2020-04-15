@@ -14,7 +14,17 @@ LIFFの準備も整いました。herokuにアプリをデプロイ（展開）�
     heroku config
     ```{{copy}}
 
-2. gitでherokuにデプロイします。gitのコマンドを3つ実行します。
+2. gitの初期設定を行います
+    ```shell
+    git config --global user.email you@example.com
+    ```{{copy}}
+    <font color="red">※you@example.com部分はご自身のメールアドレスに置き換えてください。</font><br>
+    ```shell
+    git config --global user.name your_name
+    ```{{copy}}
+    <font color="red">※your_name部分はご自身の名前に置き換えてください。</font><br>
+
+3. gitでherokuにデプロイします。gitのコマンドを3つ実行します。
     ```shell
     git add .
     ```{{copy}}
@@ -25,7 +35,8 @@ LIFFの準備も整いました。herokuにアプリをデプロイ（展開）�
     git push heroku master
     ```{{copy}}
 
-3. LIFF URLにアクセスしてみましょう
+4. これでスターターアプリがデプロイされました。ブラウザでLIFF URLにアクセスしてみましょう。<br>
+    たくさんボタンがあるので、まずLog inして、色々クリックしてみてください。LIFFでできることが分かると思います。
 
-これでスターターアプリがデプロイされました。たくさんボタンがあるので、まずLog inして、色々クリックしてみてください。LIFFでできることが分かると思います。<br>
-次のステップからは、このアプリをお絵描きアプリに改造してみましょう。
+5. スマホのLINEアプリから動かしてみよう<br>
+    長くなりそうなので次のステップで・・・

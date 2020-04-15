@@ -18,8 +18,7 @@
 </table>
 ![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0303_channel_setting.jpg)
 
-5. 同意にチェックし、作成ボタンをクリックします。必須項目が未入力だったり、同意にチェックがない場合、作成ボタンはクリックできません。<br>
-作成ボタンをクリックした後に、「情報利用に関する同意について」が表示される場合は、そちらも同意をして進みます。
+5. 同意にチェックし、作成ボタンをクリックします。必須項目が未入力だったり、同意にチェックがない場合、作成ボタンはクリックできません。
 ![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0304_channel_setting.jpg)
 
 6. `LIFF` をクリックして、追加ボタンをクリックします
