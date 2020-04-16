@@ -7,7 +7,7 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
     vim ./public/oekaki.js
     ```{{copy}}
 
-2. 120行目の`liff.sendMessage`を`liff.shareTargetPicker`に変更して、保存します
+2. 120行目の`liff.sendMessage`を`liff.shareTargetPicker`に変更、127行目の`liff.closeWindow();`をコメントアウトして、保存します
     ```shell
     vim ./public/oekaki.js
     ```{{copy}}
@@ -32,9 +32,9 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
 
 4. 確認してみましょう
 
-5. 【補足】LIFF v2にliff.isApiAvailable()が追加されました
+5. 【補足】LIFF v2にliff.isApiAvailable()が追加されました<br>
 <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.line.biz%2Fja%2Fdocs%2Fliff%2Frelease-notes%2F%3Ffbclid%3DIwAR0ExUGFrsonRNmvpOgJfuHh_ssbjhrAHBibupkdIc3t7boiTezM0H8ekPw%23liff-v2%25E3%2581%25ABliff-isapiavailable-%25E3%2581%258C%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2595%25E3%2582%258C%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F&h=AT2dc1lOEzw5KhWggFVL3r7BrvUwGB6pAMydqKhikkMRA8wkAu-70-I0EO7GIHvo_GyR1QcX-L4SqfNihcRv9fg3hJpUaiEgvccpS9hMinPb7hva35G3nzeGjf1hi5HkPLQ" target="_blank">リリースノート</a><br>
-以下のように `liff.isApiAvailable('shareTargetPicker')` を事前に実行することで、`liff.shareTargetPicker()`のエラーを回避することができます。
+以下のように `liff.isApiAvailable('shareTargetPicker')` を事前に実行することで、`liff.shareTargetPicker()`のエラーを回避することができます。<br>
 ![api](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0702_api.jpg)
 
 以上で、今回のハンズオンはすべて終了です。<br>

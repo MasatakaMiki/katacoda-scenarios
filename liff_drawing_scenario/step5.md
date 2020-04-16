@@ -24,7 +24,19 @@ LINEアプリから新しいチャネルを作成し、メニューからLIFFを
 5. リッチメニューを作ります。リッチメニューは、`LINE Official Account Manager` で作成しますので、リンクをクリックします。
 ![oam](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0506_oam.jpg)
 
+6. `ホーム` - `リッチメニュー`をクリックし、作成ボタンをクリックします
+![create_richmenu](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0507_create_richmenu.jpg)
 
+7. LIFFのタイトルと表示期間を入力します<br>
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①タイトル</td><td>LIFF-MENU</td></tr>
+<tr><td>②表示期間</td><td>2020/04/17 00:00 - 2029/12/31 23:59</td></tr>
+</table>
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0508_richmenu_setting.jpg)
+
+8. `テンプレートを選択`をクリックし、左下のテンプレートを選択して、選択ボタンをクリックします
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0509_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0510_richmenu_setting.jpg)
 
 
 次のステップからは、このアプリをお絵描きアプリに改造してみましょう。

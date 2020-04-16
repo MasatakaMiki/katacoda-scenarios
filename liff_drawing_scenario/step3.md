@@ -28,7 +28,7 @@
 <table><tr><th>項目</th><th>値</th></tr>
 <tr><td>①LIFFアプリ名</td><td>LIFF-drawing</td></tr>
 <tr><td>②サイズ</td><td>Tall</td></tr>
-<tr><td>③エンドポイント</td><td>https://ldgq-handson-20200417-name.herokuapp.com</td></tr>
+<tr><td>③エンドポイント</td><td>https://ldgq-20200417-name.herokuapp.com</td></tr>
 <tr><td>④Scope</td><td>チェックを<font color="red">3つ</font>に入れる</td></tr>
 <tr><td>⑤ボットリンク機能</td><td>On(Normal)</td></tr>
 </table>
