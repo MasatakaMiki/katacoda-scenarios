@@ -1,6 +1,6 @@
 LINEアプリから新しいチャネルを作成し、メニューからLIFFを呼び出してみましょう
 
-1. LINE Developersのページから`新規チャネル作成`をクリックします
+1. <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページから`新規チャネル作成`をクリックします
 ![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0501_create_channel.jpg)
 
 2. 今度は、`Messaging API`を選択します
@@ -38,5 +38,28 @@ LINEアプリから新しいチャネルを作成し、メニューからLIFFを
 ![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0509_richmenu_setting.jpg)
 ![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0510_richmenu_setting.jpg)
 
+9. アクションを設定します<br>
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①タイプ</td><td>リンク</td></tr>
+<tr><td>②URL</td><td>LIFF URL</td></tr>
+<tr><td>③アクションラベル</td><td>LIFFを開く</td></tr>
+</table>
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0511_richmenu_setting.jpg)
 
+10. `画像を作成`をクリックし、リッチメニューのテキストや背景色を設定します。出来たら、適用ボタンをクリックします。
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0512_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0513_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0514_richmenu_setting.jpg)
+
+11. 最後に、保存ボタンをクリックしたら、リッチメニューの完成です
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0515_richmenu_setting.jpg)
+
+12. ボットの応答をオフに設定します。`設定`をクリック、`応答設定`をクリックし、`応答メッセージ`を`オフ`にします。
+![bot_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0516_bot_setting.jpg)
+
+13. 作ったボットと友達になりましょう。<br>
+<a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`Messaging API設定`をクリックします。そこに表示されているQRコードをLINEのアプリから読み取って友達になります。
+![be_friend](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0517_be_friend.jpg)
+
+これでトークルームのリッチメニューからLIFFが起動するようになったと思います。<br>
 次のステップからは、このアプリをお絵描きアプリに改造してみましょう。
