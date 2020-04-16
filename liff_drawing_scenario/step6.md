@@ -27,7 +27,7 @@
     ```{{copy}}
 
 5. 変更箇所の説明
-<a href="" target="_blank">https://github.com/MasatakaMiki/ldgq/tree/master/202004_handson/oekaki-app</a>
+<a href="https://github.com/MasatakaMiki/ldgq/tree/master/202004_handson/oekaki-app" target="_blank">https://github.com/MasatakaMiki/ldgq/tree/master/202004_handson/oekaki-app</a>
 <table><tr><th>ファイル</th><th>内容</th></tr>
 <tr><td>./public/index.html</td><td>お絵描きアプリに変更</td></tr>
 <tr><td>./public/imgs/*.png</td><td>ペンと消しゴムの画像</td></tr>

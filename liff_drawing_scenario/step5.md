@@ -21,7 +21,7 @@ LINEアプリから新しいチャネルを作成し、メニューからLIFFを
 4. 作成ボタンをクリックします。「情報利用に関する同意について」が表示されるので、`同意する`をクリックします。
 ![channel_agreement](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0505_channel_agreement.jpg)
 
-5. 
-
+5.
+参考：https://www.katacoda.com/gaomar/scenarios/liff-v2-handson-playground
 
 次のステップからは、このアプリをお絵描きアプリに改造してみましょう。
