@@ -2,16 +2,16 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
 これまでは、送信先のトークルームなどからLIFFを開かないと、特定の送信先にメッセージを送信できませんでした。
 この機能が追加されたことで、どこで開かれても（ブラウザでも！）、任意の友達にメッセージが送信できるようになりました！
 
-1. vimでファイルを編集します
-    ```shell
-    vim ./public/oekaki.js
-    ```{{copy}}
+1. IDE、または、vimでファイルを編集します<br>
+```shell
+vim ./public/oekaki.js
+```{{copy}}
 
-2. 120行目の`liff.sendMessage`を`liff.shareTargetPicker`に変更、127行目の`liff.closeWindow();`をコメントアウトして、保存します
-    ```shell
-    vim ./public/oekaki.js
-    ```{{copy}}
-![vim](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0701_vim.jpg)
+2. 120行目の`liff.sendMessage`を`liff.shareTargetPicker`に変更、127行目の`liff.closeWindow();`をコメントアウトして、保存します<br>
+```shell
+vim ./public/oekaki.js
+```{{copy}}
+![vim](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0701_vim.jpg)<br>
 <table><tr><th>key</th><th>内容</th></tr>
 <tr><td>i</td><td>挿入モード</td></tr>
 <tr><td>Esc</td><td>コマンドモード</td></tr>
@@ -19,18 +19,18 @@ Share Target Picker（シェアターゲットピッカー）とは、LIFFから
 <tr><td>:q!(Enter)</td><td>保存せず終了</td></tr>
 </table>
 
-3. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。
-    ```shell
-    git add .
-    ```{{copy}}
-    ```shell
-    git commit -m "use share target picker"
-    ```{{copy}}
-    ```shell
-    git push heroku master
-    ```{{copy}}
+3. gitでherokuにデプロイし直します。gitのコマンドを3つ実行します。<br>
+```shell
+git add .
+```{{copy}}
+```shell
+git commit -m "use share target picker"
+```{{copy}}
+```shell
+git push heroku master
+```{{copy}}
 
-4. 確認してみましょう
+4. 確認してみましょう<br>
 
 5. 【補足】LIFF v2にliff.isApiAvailable()が追加されました<br>
 <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.line.biz%2Fja%2Fdocs%2Fliff%2Frelease-notes%2F%3Ffbclid%3DIwAR0ExUGFrsonRNmvpOgJfuHh_ssbjhrAHBibupkdIc3t7boiTezM0H8ekPw%23liff-v2%25E3%2581%25ABliff-isapiavailable-%25E3%2581%258C%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2595%25E3%2582%258C%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F&h=AT2dc1lOEzw5KhWggFVL3r7BrvUwGB6pAMydqKhikkMRA8wkAu-70-I0EO7GIHvo_GyR1QcX-L4SqfNihcRv9fg3hJpUaiEgvccpS9hMinPb7hva35G3nzeGjf1hi5HkPLQ" target="_blank">リリースノート</a><br>
