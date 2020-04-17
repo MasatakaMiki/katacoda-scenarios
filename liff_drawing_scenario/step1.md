@@ -29,7 +29,7 @@ npm install
 ```
 node_modules
 package-lock.json
-```
+```{{copy}}
 ![gitignore](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0104_gitignore.jpg)<br>
 
 これで、ルートディレクトリにあるpackage.jsonに記載されたパッケージなどが一括でインストールされ、スターターアプリが動く環境が準備できました。<br>

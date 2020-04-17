@@ -1,6 +1,7 @@
 前のステップで準備したアプリをherokuに展開する準備をしましょう
 
-1. まずは、herokuにログインします<br>
+1. まずは、herokuにログインします。<br>
+Terminalに戻って、以下のコマンドを実行します。<br>
 ```shell
 heroku login --interactive
 ```{{copy}}
