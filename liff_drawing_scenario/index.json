@@ -2,7 +2,7 @@
   "title": "LINE LIFFでお絵描きアプリを作ってみよう",
   "description": "LIFFスターターアプリをherokuにデプロイし、お絵描きアプリに改造する流れが体験できます。",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "45 minutes",
   "details": {
     "steps": [
       {
