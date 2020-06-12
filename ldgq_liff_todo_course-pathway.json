@@ -1,5 +1,11 @@
 {
   "title": "[九州] LDGQオンラインハンズオン ～ LINE LIFFでDB連携アプリをつくってみよう",
   "description": "LINE LIFF v2 (Node.js) + heroku + postgreSQL",
-  "courses": []
+  "courses": [
+    {
+      "course_id": "liff_todo_scenario_1_LINE",
+      "title": "LIFF(LINEログイン)とボット(Messaging API)をつくろう",
+      "description": "LINE DevelopersとLINE Official Account Managerを使ってLINE側の設定をします"
+    }
+  ]
 }
