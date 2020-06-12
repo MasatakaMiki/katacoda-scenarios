@@ -1,0 +1,55 @@
+{
+  "title": "LINE LIFFでお絵描きアプリを作ってみよう",
+  "description": "LIFFスターターアプリをherokuにデプロイし、お絵描きアプリに改造する流れが体験できます。",
+  "difficulty": "Beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "LIFF v2 starter app をCloneする",
+        "text": "step1.md"
+      },
+      {
+        "title": "herokuにアプリを展開する準備(heroku)",
+        "text": "step2.md"
+      },
+      {
+        "title": "herokuにアプリを展開する準備(LIFF)",
+        "text": "step3.md"
+      },
+      {
+        "title": "herokuにアプリを展開する",
+        "text": "step4.md"
+      },
+      {
+        "title": "LINEアプリで確認してみよう",
+        "text": "step5.md"
+      },
+      {
+        "title": "スターターアプリを改造する",
+        "text": "step6.md"
+      },
+      {
+        "title": "Share Target Pickerを試してみる",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "intro_code.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+      "showide": true,
+      "ide": "ssh host01 '/opt/start-vscode.sh'",
+      "idePort": 23000,
+      "hideintro": false,
+      "uilayout": "terminal"
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+}
