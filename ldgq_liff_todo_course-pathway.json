@@ -6,6 +6,11 @@
       "course_id": "liff_todo_scenario_1_LINE",
       "title": "LIFF(LINEログイン)とボット(Messaging API)をつくろう",
       "description": "LINE DevelopersとLINE Official Account Managerを使ってLINE側の設定をします"
+    },
+    {
+      "course_id": "liff_todo_scenario_2_DB",
+      "title": "herokuにアプリを作成し、データベースを構築しよう",
+      "description": "ターミナルとherokuの管理画面を使ってherokuにデータベースを作成します"
     }
   ]
 }
