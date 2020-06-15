@@ -8,7 +8,7 @@
 
 3. 各項目を埋めていきます<br>
 <table><tr><th>項目</th><th>値</th></tr>
-<tr><td>⓪チャネルアイコン</td><td>任意です。<a href="https://share.getcloudapp.com/NQugZ40Q"><img src="https://share.getcloudapp.com/NQugZ40Q" width="30%" height="30%" /></a></td></tr>
+<tr><td>⓪チャネルアイコン</td><td>任意です。<img src="https://share.getcloudapp.com/NQugZ40Q" width="30%" height="30%" /></td></tr>
 <tr><td>①チャネル名</td><td>LDGQ ToDoリスト HOME</td></tr>
 <tr><td>②チャネル説明</td><td>LDGQ LIFFアプリをメニュー起動するアプリです</td></tr>
 <tr><td>③大業種</td><td>個人</td></tr>
@@ -67,6 +67,7 @@
 `Messaging API設定`をクリックします。下にスクロールして`チャネルアクセストークン`を発行し、メモします。<br>
 ![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0219_access_token.jpg)
 ![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0220_access_token.jpg)
+<br>
 ![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0221_access_token.jpg)
 
 15. 作ったボットと友達になりましょう。<br>
