@@ -1,65 +1,78 @@
-LINEアプリから新しいチャネルを作成し、メニューからLIFFを呼び出してみましょう
+続いてLINEボットを作成し、メニューからLIFFを呼び出せるように準備します
 
 1. <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページから`新規チャネル作成`をクリックします<br>
-![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0501_create_channel.jpg)
+![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0201_create_channel.jpg)
 
 2. 今度は、`Messaging API`を選択します<br>
-![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0502_create_channel.jpg)
+![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0202_create_channel.jpg)
 
 3. 各項目を埋めていきます<br>
 <table><tr><th>項目</th><th>値</th></tr>
-<tr><td>①チャネル名</td><td>LDGQ-LIFF-Bot</td></tr>
-<tr><td>②チャネル説明</td><td>LDGQ-LIFF-Bot</td></tr>
+<tr><td>⓪チャネルアイコン</td><td>任意です。<a href="https://share.getcloudapp.com/NQugZ40Q"><img src="https://share.getcloudapp.com/NQugZ40Q" width="30%" height="30%" /></a></td></tr>
+<tr><td>①チャネル名</td><td>LDGQ ToDoリスト HOME</td></tr>
+<tr><td>②チャネル説明</td><td>LDGQ LIFFアプリをメニュー起動するアプリです</td></tr>
 <tr><td>③大業種</td><td>個人</td></tr>
 <tr><td>④小業種</td><td>個人（その他）</td></tr>
 <tr><td>⑤メールアドレス</td><td>ご自身のメールアドレスを入力</td></tr>
 <tr><td>⑥同意</td><td>チェックを2つ入れる</td></tr>
 </table>
-![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0503_channel_setting.jpg)
-![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0504_channel_setting.jpg)
+![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0203_channel_setting.jpg)
+![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0204_channel_setting.jpg)
 
 4. 作成ボタンをクリックします。「情報利用に関する同意について」が表示されるので、`同意する`をクリックします。<br>
-![channel_agreement](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0505_channel_agreement.jpg)
+![channel_agreement](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0205_channel_agreement.jpg)
 
 5. リッチメニューを作ります。リッチメニューは、`LINE Official Account Manager` で作成しますので、リンクをクリックします。<br>
-![oam](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0506_oam.jpg)
+![oam](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0206_oam.jpg)
 
 6. `ホーム` - `リッチメニュー`をクリックし、作成ボタンをクリックします<br>
-![create_richmenu](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0507_create_richmenu.jpg)
+![create_richmenu](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0207_create_richmenu.jpg)
 
-7. LIFFのタイトルと表示期間を入力します<br>
+7. リッチメニューのタイトルを入力します<br>
 <table><tr><th>項目</th><th>値</th></tr>
-<tr><td>①タイトル</td><td>LIFF-MENU</td></tr>
-<tr><td>②表示期間</td><td>2020/04/17 00:00 - 2029/12/31 23:59</td></tr>
+<tr><td>①タイトル</td><td>LIFF MENU</td></tr>
+<tr><td>②表示期間</td><td>2020/06/17 00:00 - 2029/12/31 23:59</td></tr>
 </table>
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0508_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0208_richmenu_setting.jpg)
 
 8. `テンプレートを選択`をクリックし、左下のテンプレートを選択して、選択ボタンをクリックします<br>
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0509_richmenu_setting.jpg)
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0510_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0209_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0210_richmenu_setting.jpg)
 
 9. アクションを設定します<br>
 <table><tr><th>項目</th><th>値</th></tr>
 <tr><td>①タイプ</td><td>リンク</td></tr>
-<tr><td>②URL</td><td>LIFF URL</td></tr>
+<tr><td>②URL</td><td>控えているLIFF URL</td></tr>
 <tr><td>③アクションラベル</td><td>LIFFを開く</td></tr>
 </table>
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0511_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0211_richmenu_setting.jpg)
 
 10. `画像を作成`をクリックし、リッチメニューのテキストや背景色を設定します。出来たら、適用ボタンをクリックします。<br>
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0512_richmenu_setting.jpg)
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0513_richmenu_setting.jpg)
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0514_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0212_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0213_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0214_richmenu_setting.jpg)
 
 11. 最後に、保存ボタンをクリックしたら、リッチメニューの完成です<br>
-![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0515_richmenu_setting.jpg)
+![richmenu_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0215_richmenu_setting.jpg)
 
 12. ボットの応答をオフに設定します。`設定`をクリック、`応答設定`をクリックし、`応答メッセージ`を`オフ`にします。<br>
-![bot_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0516_bot_setting.jpg)
+![bot_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0216_bot_setting.jpg)
 
-13. 作ったボットと友達になりましょう。<br>
+13. チャネルシークレットを控えます。<br>
+<a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`チャネル基本設定`をクリックします。下にスクロールして`チャネルシークレット`をメモします。<br>
+![channel_secret](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0217_channel_secret.jpg)
+![channel_secret](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0218_channel_secret.jpg)
+
+14. チャネルアクセストークンを発行し、控えます。<br>
+`Messaging API設定`をクリックします。下にスクロールして`チャネルアクセストークン`を発行し、メモします。<br>
+![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0219_access_token.jpg)
+![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0220_access_token.jpg)
+![access_token](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0221_access_token.jpg)
+
+15. 作ったボットと友達になりましょう。<br>
 <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`Messaging API設定`をクリックします。そこに表示されているQRコードをLINEのアプリから読み取って友達になります。<br>
-![be_friend](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0517_be_friend.jpg)
+![be_friend](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0222_be_friend.jpg)
 
-これでトークルームのリッチメニューからLIFFが起動するようになったと思います。<br>
-次のステップからは、このアプリをお絵描きアプリに改造してみましょう。
+これでトークルームのリッチメニューからLIFFが起動する準備ができました。<br>
+（エンドポイントが仮のURLなので、起動はしません）
+次のシナリオでは、herokuの設定とデータベースの準備を行います。
