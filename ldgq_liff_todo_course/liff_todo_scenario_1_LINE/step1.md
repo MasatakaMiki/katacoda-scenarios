@@ -1,36 +1,50 @@
-ここでは、LIFF v2のスターターアプリをローカルに持って来て、きちんと動く環境にするために、3つのコマンドを実行します
+それでは早速、LINEの開発者向けコンソールからLIFFを作っていきましょう
 
-1. LINEのgithubから、[line-liff-starter](https://github.com/line/line-liff-v2-starter) リポジトリをCloneします<br>
-```shell
-git clone https://github.com/line/line-liff-v2-starter
-```{{copy}}
+1. ブラウザで LINE Developers Console を開き、ログインします<br>
+<a href="https://developers.line.biz/console/" target="_blank">https://developers.line.biz/console/</a>
 
-2. カレント・ディレクトを`line-liff-v2-starter`に変更します<br>
-```shell
-cd line-liff-v2-starter
-```{{copy}}
+2. プロバイダーを作成または既存のプロバイダーを選択します<br>
+![create_provider](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0101_create_provider.jpg)
 
-3. Node Package ManagerでNode.jsのライブラリをインストールします<br>
-```shell
-npm install
-```{{copy}}
+3. チャネルを作成します。<font color="red">この時、必ず`LINEログイン`を選択してください。</font><br>
+![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0102_create_channel.jpg)
 
-4. KatacodaのIDEをクリックします
-![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0101_ide.jpg)<br>
+4. 各項目を埋めていきます<br>
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①チャネル名</td><td>LDGQ ToDoリスト</td></tr>
+<tr><td>②チャネル説明</td><td>LDGQ LIFFアプリです</td></tr>
+<tr><td>③アプリタイプ</td><td>チェックを2つ入れる</td></tr>
+<tr><td>④メールアドレス</td><td>ご自身のメールアドレスを入力</td></tr>
+</table>
+![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0103_channel_setting.jpg)
 
-5. `line-liff-v2-starter`を展開します
-![ide](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0102_ide.jpg)<br>
+5. 同意にチェックし、作成ボタンをクリックします。必須項目が未入力だったり、同意にチェックがない場合、作成ボタンはクリックできません。
+![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0104_channel_setting.jpg)
 
-6. `.gitignore`ファイルを作成します<br>
-`line-liff-v2-starter`上でマウスを右クリック、`New File`をクリックし、ファイル名に.gitignoreと入力します
-![gitignore](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0103_gitignore.jpg)<br>
+6. `LIFF` をクリックして、追加ボタンをクリックします<br>
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0105_create_liff.jpg)
 
-7. ファイルに下記を追加し、保存します
-```
-node_modules
-package-lock.json
-```{{copy}}
-![gitignore](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/liff_drawing_scenario/img/s0104_gitignore.jpg)<br>
+7. 各項目を埋めていきます<br>
+<table><tr><th>項目</th><th>値</th></tr>
+<tr><td>①LIFFアプリ名</td><td>LIFF-ToDoList</td></tr>
+<tr><td>②サイズ</td><td>Full</td></tr>
+<tr><td>③エンドポイント</td><td>https://temporary-name.herokuapp.com</td></tr>
+<tr><td>④Scope</td><td>チェックを<font color="red">3つ</font>に入れる</td></tr>
+<tr><td>⑤ボットリンク機能</td><td>On(Normal)</td></tr>
+</table>
+<font color="red">※エンドポイントは仮のURLです。herokuのアプリ作成後変更します。</font><br>
+<font color="red">※Scopeは`すべて表示`をクリックしないと`chat_message.write`にチェックを入れることができないので注意</font>
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0106_liff_setting.jpg)
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0107_liff_setting.jpg)
 
-これで、ルートディレクトリにあるpackage.jsonに記載されたパッケージなどが一括でインストールされ、スターターアプリが動く環境が準備できました。<br>
-それでは、次のステップから、このアプリをherokuに展開していきましょう！
+8. 追加ボタンをクリックすると、LIFFのURLが生成されますので、控えておいてください<br>
+`https://liff.line.me/9999999999-xxxxxxxx`<br>
+<font color="red">LIFF URLの最後の/(スラッシュ)以降が、LIFFのIDです</font><br>
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0108_liff_url.jpg)
+
+9. ついでに、`シェアターゲットピッカー`をONにしておきます。スクロールして、同意にチェックを入れ、有効化します。<br>
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0109_stp.jpg)
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0110_stp.jpg)
+![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0111_stp.jpg)
+
+これで、LIFFの準備は完了しました。続いてボットを作成します！

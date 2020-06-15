@@ -1,42 +1,21 @@
 {
-  "title": "LINE LIFFでお絵描きアプリを作ってみよう",
-  "description": "LIFFスターターアプリをherokuにデプロイし、お絵描きアプリに改造する流れが体験できます。",
+  "title": "LINE LIFFとボットの準備",
+  "description": "LIFF(LINEログイン)と、それを起動するボット(LINE Messaging API)の設定を行います。",
   "difficulty": "Beginner",
-  "time": "45 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "LIFF v2 starter app をCloneする",
+        "title": "LIFFをつくる",
         "text": "step1.md"
       },
       {
-        "title": "herokuにアプリを展開する準備(heroku)",
+        "title": "ボットを作って、リッチメニューを準備する",
         "text": "step2.md"
-      },
-      {
-        "title": "herokuにアプリを展開する準備(LIFF)",
-        "text": "step3.md"
-      },
-      {
-        "title": "herokuにアプリを展開する",
-        "text": "step4.md"
-      },
-      {
-        "title": "LINEアプリで確認してみよう",
-        "text": "step5.md"
-      },
-      {
-        "title": "スターターアプリを改造する",
-        "text": "step6.md"
-      },
-      {
-        "title": "Share Target Pickerを試してみる",
-        "text": "step7.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "code": "intro_code.sh"
     },
     "finish": {
       "text": "finish.md"
