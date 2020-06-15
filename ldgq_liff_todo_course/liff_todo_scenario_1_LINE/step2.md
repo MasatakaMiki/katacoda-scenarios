@@ -58,8 +58,8 @@
 12. ボットの応答をオフに設定します。`設定`をクリック、`応答設定`をクリックし、`応答メッセージ`を`オフ`にします。<br>
 ![bot_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0216_bot_setting.jpg)
 
-13. チャネルシークレットを控えます。<br>
-<a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`チャネル基本設定`をクリックします。下にスクロールして`チャネルシークレット`をメモします。<br>
+13. チャネルシークレット、ユーザーIDを控えます。<br>
+<a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`チャネル基本設定`をクリックします。下にスクロールして`チャネルシークレット`と`あなたのユーザーID`をメモします。<br>
 ![channel_secret](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0217_channel_secret.jpg)
 ![channel_secret](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0218_channel_secret.jpg)
 

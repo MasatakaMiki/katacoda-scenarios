@@ -1,0 +1,35 @@
+{
+  "title": "herokuアプリとデータベースの準備",
+  "description": "herokuにアプリを作成し、データベースの構築を行います。",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "herokuにアプリをつくる",
+        "text": "step1.md"
+      },
+      {
+        "title": "データベースを構築する",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "intro_code.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+      "showide": true,
+      "ide": "ssh host01 '/opt/start-vscode.sh'",
+      "idePort": 23000,
+      "hideintro": false,
+      "uilayout": "terminal"
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+}
