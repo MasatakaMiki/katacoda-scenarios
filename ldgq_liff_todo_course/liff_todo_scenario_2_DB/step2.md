@@ -6,62 +6,19 @@ heroku config:set PG_HOST={PG Host} PG_NAME={PG Database} PG_USER={PG User} PG_P
 ```{{copy}}
 <font color="red">※{PG Host}、{PG Database}、{PG User}、{PG Port}、{PG Password}部分は前のステップで控えたデータベース情報を使用します。"{}"は除いて置き換えてください。<br>
 また、{app name}はherokuのアプリ名に"{}"は除いて置き換えてください。</font><br>
-
-
-<b>①サーバーのアドレス（Host）</b>
-```shell
-heroku config:set PG_HOST={PG Host}
-```{{copy}}
-<font color="red">※{PG Host}部分は前のステップで控えたPG Hostを使用します。"{}"は除いて置き換えてください。</font><br>
 例）<br>
 ```shell
-heroku config:set PG_HOST=ec2-9-99-999-99.compute-1.amazonaws.com
+heroku config:set PG_HOST=ec2-9-99-999-99.compute-1.amazonaws.com PG_NAME=x9xxxxx9xxx999 PG_USER=xxxxxxxxxxxxxx PG_PORT=5432 PG_PWD=0x00x00x9999999x0x0xx00000x9x999999999xx9x9xx00000x9x00x0x0x99x0 -a ldgq-20200617-name
 ```
-<br>
-<b>②データベースの名前（Database）</b>
-```shell
-heroku config:set PG_NAME={PG Database}
-```{{copy}}
-<font color="red">※{PG Database}部分は前のステップで控えたPG Databaseを使用します。"{}"は除いて置き換えてください。</font><br>
-例）<br>
-```shell
-heroku config:set PG_NAME=x9xxxxx9xxx999
-```
-<br>
-<b>③ユーザー名（User）</b>
-```shell
-heroku config:set PG_USER={PG User}
-```{{copy}}
-<font color="red">※{PG User}部分は前のステップで控えたPG Userを使用します。"{}"は除いて置き換えてください。</font><br>
-例）<br>
-```shell
-heroku config:set PG_USER=xxxxxxxxxxxxxx
-```
-<br>
-<b>④ポート（Port）</b>
-```shell
-heroku config:set PG_PORT={PG Port}
-```{{copy}}
-<font color="red">※{PG Port}部分は前のステップで控えたPG Portを使用します。"{}"は除いて置き換えてください。</font><br>
-例）<br>
-```shell
-heroku config:set PG_PORT=5432
-```
-<br>
-<b>⑤パスワード（Password）</b>
-```shell
-heroku config:set PG_PWD={PG Password}
-```{{copy}}
-<font color="red">※{PG Password}部分は前のステップで控えたPG Hostを使用します。"{}"は除いて置き換えてください。</font><br>
-例）<br>
-```shell
-heroku config:set PG_PWD=0x00x00x9999999x0x0xx00000x9x999999999xx9x9xx00000x9x00x0x0x99x0
-```
-<br>
 
 2.設定した環境変数を以下のコマンドで確認します<br>
 ```shell
 heroku config
+```{{copy}}
+
+2.設定した環境変数を以下のコマンドで確認します<br>
+```shell
+heroku pg
 ```{{copy}}
 
 3.ターミナルからデータベースに接続します<br>

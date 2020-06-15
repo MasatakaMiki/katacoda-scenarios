@@ -13,7 +13,7 @@ heroku login --interactive
 heroku create ldgq-20200617-name
 ```{{copy}}
 作成されたらURLが出力されていると思います。
-LIFFのエンドポイント設定に必要となるので、控えておいてください。<br>
+LIFFのエンドポイント設定に必要となるので、アプリ名とURLを控えておいてください。<br>
 `https://ldgq-20200617-name.herokuapp.com`<br>
 
 3. ブラウザで herokuの管理画面へ、ログインし、作成したアプリをクリックします。<br>
