@@ -1,32 +1,92 @@
-続いてLINEボットを作成し、メニューからLIFFを呼び出せるように準備します
+構築したデータベースにテーブルを作成します
 
-1. <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページから`新規チャネル作成`をクリックします<br>
-![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0201_create_channel.jpg)
+1. ターミナルに戻り、herokuの環境変数にデータベース情報を設定します<br>
+<b>①サーバーのアドレス（Host）</b>
+```shell
+heroku config:set PG_HOST={PG Host}
+```{{copy}}
+<font color="red">※{PG Host}部分は前のステップで控えたPG Hostを使用します。"{}"は除いて置き換えてください。</font><br>
+例）<br>
+```shell
+heroku config:set PG_HOST=ec2-9-99-999-99.compute-1.amazonaws.com
+```
+<br>
+<b>②データベースの名前（Database）</b>
+```shell
+heroku config:set PG_NAME={PG Database}
+```{{copy}}
+<font color="red">※{PG Database}部分は前のステップで控えたPG Databaseを使用します。"{}"は除いて置き換えてください。</font><br>
+例）<br>
+```shell
+heroku config:set PG_NAME=x9xxxxx9xxx999
+```
+<br>
+<b>③ユーザー名（User）</b>
+```shell
+heroku config:set PG_USER={PG Host}
+```{{copy}}
+<font color="red">※{PG User}部分は前のステップで控えたPG Userを使用します。"{}"は除いて置き換えてください。</font><br>
+例）<br>
+```shell
+heroku config:set PG_USER=xxxxxxxxxxxxxx
+```
+<br>
+<b>④ポート（Port）</b>
+```shell
+heroku config:set PG_PORT={PG Port}
+```{{copy}}
+<font color="red">※{PG Port}部分は前のステップで控えたPG Portを使用します。"{}"は除いて置き換えてください。</font><br>
+例）<br>
+```shell
+heroku config:set PG_PORT=5432
+```
+<br>
+<b>⑤パスワード（Password）</b>
+```shell
+heroku config:set PG_PWD={PG Password}
+```{{copy}}
+<font color="red">※{PG Password}部分は前のステップで控えたPG Hostを使用します。"{}"は除いて置き換えてください。</font><br>
+例）<br>
+```shell
+heroku config:set PG_PWD=0x00x00x9999999x0x0xx00000x9x999999999xx9x9xx00000x9x00x0x0x99x0
+```
+<br>
 
-2. 今度は、`Messaging API`を選択します<br>
-![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0202_create_channel.jpg)
+2.設定した環境変数を以下のコマンドで確認します<br>
+```shell
+heroku config
+```{{copy}}
 
-3. 各項目を埋めていきます<br>
-<table><tr><th>項目</th><th>値</th></tr>
-<tr><td>⓪チャネルアイコン</td><td>任意です。<br><img src="https://p62.f2.n0.cdn.getcloudapp.com/items/NQugZ40Q/todo.png?v=345132b267befc85123043a5ebbfdff8" style="height:50%;width:50%;border: 1px solid #0000ff;" alt="右クリックで保存して使ってください" /></td></tr>
-<tr><td>①チャネル名</td><td>LDGQ ToDoリスト HOME</td></tr>
-<tr><td>②チャネル説明</td><td>LDGQ LIFFアプリをメニュー起動するアプリです</td></tr>
-<tr><td>③大業種</td><td>個人</td></tr>
-<tr><td>④小業種</td><td>個人（その他）</td></tr>
-<tr><td>⑤メールアドレス</td><td>ご自身のメールアドレスを入力</td></tr>
-<tr><td>⑥同意</td><td>チェックを2つ入れる</td></tr>
-</table>
-![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0203_channel_setting.jpg)
-![channel_setting](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0204_channel_setting.jpg)
+3.ターミナルからデータベースに接続します<br>
+```shell
+heroku pg:psql
+```{{copy}}
 
-4. 作成ボタンをクリックします。「情報利用に関する同意について」が表示されるので、`同意する`をクリックします。<br>
-![channel_agreement](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0205_channel_agreement.jpg)
+4.タイムゾーンの変更をします<br>
+①現在の時刻を確認<br>
+```shell
+select CURRENT_TIMESTAMP;
+```{{copy}}
+②タイムゾーンを変更<br>
+```shell
+alter database {PG Database} set timezone = 'Asia/Tokyo';
+```{{copy}}
+<font color="red">※{PG Database}部分は前のステップで控えたPG Databaseを使用します。"{}"は除いて置き換えてください。</font><br>
 
-5. リッチメニューを作ります。リッチメニューは、`LINE Official Account Manager` で作成しますので、リンクをクリックします。<br>
-![oam](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0206_oam.jpg)
+5.接続をし直し、タームゾーンの変更を確認します<br>
+①一旦接続<br>
+```shell
+\q
+```{{copy}}
+②再度接続<br>
+```shell
+heroku pg:psql
+```{{copy}}
+③現在の時刻を確認<br>
+```shell
+select CURRENT_TIMESTAMP;
+```{{copy}}
 
-6. `ホーム` - `リッチメニュー`をクリックし、作成ボタンをクリックします<br>
-![create_richmenu](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0207_create_richmenu.jpg)
 
 7. リッチメニューのタイトルを入力します<br>
 <table><tr><th>項目</th><th>値</th></tr>
