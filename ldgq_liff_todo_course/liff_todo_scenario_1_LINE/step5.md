@@ -1,4 +1,4 @@
-続いてLINEボットを作成し、メニューからLIFFを呼び出せるように準備します
+続いてLINEボットを作成し、メニューからLIFFを呼び出せるようにします
 
 1. <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページから`新規チャネル作成`をクリックします<br>
 ![create_channel](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0501_create_channel.jpg)
@@ -76,5 +76,4 @@
 <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`Messaging API設定`をクリックします。そこに表示されているQRコードをLINEのアプリから読み取って友達になります。<br>
 ![be_friend](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0522_be_friend.jpg)
 
-これでトークルームのリッチメニューからLIFFが起動する準備ができました。<br>
-（エンドポイントが仮のURLなので、起動はしません）
+これでトークルームのリッチメニューからもLIFFが起動するようになりました！

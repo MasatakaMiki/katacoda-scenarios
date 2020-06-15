@@ -1,4 +1,4 @@
-それでは早速、LINEの開発者向けコンソールからLIFFを作っていきましょう
+それでは、LINEの開発者向けコンソールからLIFFを作っていきましょう
 
 1. ブラウザで LINE Developers Console を開き、ログインします<br>
 <a href="https://developers.line.biz/console/" target="_blank">https://developers.line.biz/console/</a>
@@ -28,16 +28,15 @@
 <table><tr><th>項目</th><th>値</th></tr>
 <tr><td>①LIFFアプリ名</td><td>LIFF-ToDoList</td></tr>
 <tr><td>②サイズ</td><td>Full</td></tr>
-<tr><td>③エンドポイント</td><td>https://temporary-name.herokuapp.com</td></tr>
+<tr><td>③エンドポイント</td><td><font color="red">前のステップで控えたheroku URL</font></td></tr>
 <tr><td>④Scope</td><td>チェックを<font color="red">3つ</font>に入れる</td></tr>
 <tr><td>⑤ボットリンク機能</td><td>On(Normal)</td></tr>
 </table>
-<font color="red">※エンドポイントは仮のURLです。herokuのアプリ作成後変更します。</font><br>
 <font color="red">※Scopeは`すべて表示`をクリックしないと`chat_message.write`にチェックを入れることができないので注意</font>
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0306_liff_setting.jpg)
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0307_liff_setting.jpg)
 
-8. 追加ボタンをクリックすると、LIFFのURLが生成されますので、控えておいてください<br>
+8. 追加ボタンをクリックすると、LIFFのURLが生成されますので、LIFF URLとLIFF IDを控えておいてください<br>
 `https://liff.line.me/9999999999-xxxxxxxx`<br>
 <font color="red">LIFF URLの最後の/(スラッシュ)以降が、LIFFのIDです</font><br>
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0308_liff_url.jpg)
@@ -47,4 +46,4 @@
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0310_stp.jpg)
 ![create_liff](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0311_stp.jpg)
 
-これで、LIFFの準備は完了しました。続いてボットを作成します！
+これで、LIFFの準備は完了しました。それでは、またherokuに戻って、アプリをデプロイ（展開）していきます！
