@@ -8,7 +8,7 @@
 
 3. 各項目を埋めていきます<br>
 <table><tr><th>項目</th><th>値</th></tr>
-<tr><td>⓪チャネルアイコン</td><td>任意です。<img src="https://p62.f2.n0.cdn.getcloudapp.com/items/NQugZ40Q/todo.png?v=345132b267befc85123043a5ebbfdff8" width="30%" height="30%" /></td></tr>
+<tr><td>⓪チャネルアイコン</td><td>任意です。<br><img src="https://p62.f2.n0.cdn.getcloudapp.com/items/NQugZ40Q/todo.png?v=345132b267befc85123043a5ebbfdff8" width="50%" height="50%" border="1" /></td></tr>
 <tr><td>①チャネル名</td><td>LDGQ ToDoリスト HOME</td></tr>
 <tr><td>②チャネル説明</td><td>LDGQ LIFFアプリをメニュー起動するアプリです</td></tr>
 <tr><td>③大業種</td><td>個人</td></tr>
@@ -78,4 +78,3 @@
 
 これでトークルームのリッチメニューからLIFFが起動する準備ができました。<br>
 （エンドポイントが仮のURLなので、起動はしません）
-次のシナリオでは、herokuの設定とデータベースの準備を行います。
