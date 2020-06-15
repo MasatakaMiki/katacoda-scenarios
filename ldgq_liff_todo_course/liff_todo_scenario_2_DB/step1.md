@@ -14,7 +14,7 @@ heroku create ldgq-20200617-name
 ```{{copy}}
 作成されたらURLが出力されていると思います。
 LIFFのエンドポイント設定に必要となるので、控えておいてください。<br>
-`https://ldgq-20200617-name.herokuapp.com`
+`https://ldgq-20200617-name.herokuapp.com`<br>
 
 3. ブラウザで herokuの管理画面へ、ログインし、作成したアプリをクリックします。<br>
 <a href="https://dashboard.heroku.com/" target="_blank">https://dashboard.heroku.com/</a>
@@ -29,7 +29,7 @@ LIFFのエンドポイント設定に必要となるので、控えておいて�
 6. 準備された、`Heroku Postgres`をクリックします。<br>
 ![create_db](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_2_DB/img/s0104_create_db.jpg)
 
-7. 別のページでデータベースの管理画面が開きますので、`Setings`をクリックし、`View Credentials...`ボタンをクリックします。<br>
+7. データベースの管理画面が開きますので、`Setings`をクリックし、`View Credentials...`ボタンをクリックします。<br>
 ![create_db](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_2_DB/img/s0105_create_db.jpg)
 
 8. Host、Database、User、Port、Passwordをメモしておきます。<br>

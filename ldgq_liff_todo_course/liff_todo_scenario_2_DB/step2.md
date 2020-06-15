@@ -1,6 +1,13 @@
 構築したデータベースにテーブルを作成します
 
 1. ターミナルに戻り、herokuの環境変数にデータベース情報を設定します<br>
+```shell
+heroku config:set PG_HOST={PG Host} PG_NAME={PG Database} PG_USER={PG User} PG_PORT={PG Port} PG_PWD={PG Password} -a {app name}
+```{{copy}}
+<font color="red">※{PG Host}、{PG Database}、{PG User}、{PG Port}、{PG Password}部分は前のステップで控えたデータベース情報を使用します。"{}"は除いて置き換えてください。<br>
+また、{app name}はherokuのアプリ名に"{}"は除いて置き換えてください。</font><br>
+
+
 <b>①サーバーのアドレス（Host）</b>
 ```shell
 heroku config:set PG_HOST={PG Host}
@@ -23,7 +30,7 @@ heroku config:set PG_NAME=x9xxxxx9xxx999
 <br>
 <b>③ユーザー名（User）</b>
 ```shell
-heroku config:set PG_USER={PG Host}
+heroku config:set PG_USER={PG User}
 ```{{copy}}
 <font color="red">※{PG User}部分は前のステップで控えたPG Userを使用します。"{}"は除いて置き換えてください。</font><br>
 例）<br>
