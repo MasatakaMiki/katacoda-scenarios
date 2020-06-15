@@ -2,7 +2,7 @@
   "title": "LINE LIFFとボットの準備",
   "description": "LIFF(LINEログイン)と、それを起動するボット(LINE Messaging API)の設定を行います。",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
@@ -10,7 +10,7 @@
         "text": "step1.md"
       },
       {
-        "title": "herokuにアプリを展開する",
+        "title": "herokuにアプリを展開する準備",
         "text": "step2.md"
       },
       {
@@ -18,8 +18,12 @@
         "text": "step3.md"
       },
       {
-        "title": "ボットを作って、リッチメニューを準備する",
+        "title": "herokuにアプリを展開する",
         "text": "step4.md"
+      },
+      {
+        "title": "ボットを作って、リッチメニューを準備する",
+        "text": "step5.md"
       }
     ],
     "intro": {
