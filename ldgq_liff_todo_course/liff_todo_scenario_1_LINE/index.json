@@ -6,17 +6,26 @@
   "details": {
     "steps": [
       {
-        "title": "LIFFをつくる",
+        "title": "LIFF v2 starter app をCloneする",
         "text": "step1.md"
       },
       {
-        "title": "ボットを作って、リッチメニューを準備する",
+        "title": "herokuにアプリを展開する",
         "text": "step2.md"
+      },
+      {
+        "title": "LIFFをつくる",
+        "text": "step3.md"
+      },
+      {
+        "title": "ボットを作って、リッチメニューを準備する",
+        "text": "step4.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
-    },
+      "text": "intro.md",
+      "code": "intro_code.sh"
+  },
     "finish": {
       "text": "finish.md"
     }
