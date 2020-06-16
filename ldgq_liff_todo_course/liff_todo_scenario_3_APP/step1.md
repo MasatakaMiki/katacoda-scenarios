@@ -98,6 +98,7 @@ npm install @line/bot-sdk --save
 
 14. サーバー側（./index.js）にルートを追加します。1行目、22～29行目、87～100行目のコメントアウトを解除します。<br>
 ![fix_pg](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0101_fix_pg.jpg)
+<br>
 ![fix_pg](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0102_fix_pg.jpg)
 
 15. LIFFのjs（./public/todolist.js）に外部ブラウザだった場合の処理を追加します。183行目と184行目をコメントアウトし、185～207行目のコメントアウトを解除します。<br>
@@ -280,6 +281,7 @@ client.pushMessage(hidden_userid, {
 })
 ```{{copy}}<br>
 <a href="https://developers.line.biz/flex-simulator/" target="_blank">シミュレータ</a>があるので、簡単に作れます。シミュレータに慣れるための<a href="https://developers.line.biz/ja/news/2020/06/09/flex-message-simulator-tutorial/" target="_blank">チュートリアル</a>も準備されています。<br>
+<br>
 ③LIFFには、シェアターゲットピッカーという機能があります。これは、友だちやグループを指定して、メッセージを送信できる機能です。<br>
 ```shell
 liff.sendMessages(
