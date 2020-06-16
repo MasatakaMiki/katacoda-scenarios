@@ -2,7 +2,7 @@
   "title": "herokuアプリの改造",
   "description": "herokuのアプリをDB連携アプリに改造します",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {

@@ -4,9 +4,9 @@
 <table><tr><th>ツール名</th><th>特徴</th></tr>
 <tr><td><a href="https://www.postgresql.jp/document/9.3/html/app-psql.html" target="_blank">psql</a></td><td>CUI</td></tr>
 <tr><td><a href="https://www.pgadmin.org/" target="_blank">pgAdmin</a></td><td>OSS</td></tr>
-<tr><td><a href="https://a5m2.mmatsubara.com/" target="_blank">A5:SQL Mk-2</a></td><td>Windows用フリーソフト</td></tr>
+<tr><td><a href="https://a5m2.mmatsubara.com/" target="_blank">A5:SQL Mk-2</a></td><td>Windows Only</td></tr>
 <tr><td><a href="https://a5m2.mmatsubara.com/" target="_blank">HeidiSQL</a></td><td>OSS。MySQL用だがSQL Serverにも対応</td></tr>
-<tr><td><a href="https://eggerapps.at/postico/" target="_blank">Postico</a></td><td>for Mac</td></tr>
+<tr><td><a href="https://eggerapps.at/postico/" target="_blank">Postico</a></td><td>Mac Only</td></tr>
 </table>
 
 2. <a href="https://pgweb-demo.herokuapp.com/" target="_blank">pgweb</a>を開いたら、Host、Port、Username(User)、Password、Databaseを入力し、`Connect`ボタンをクリックします<br>
@@ -24,7 +24,7 @@ select CURRENT_TIMESTAMP;
 alter database {PG Database} set timezone = 'Asia/Tokyo';
 ```{{copy}}
 <font color="red">※{PG Database}部分は前のステップで控えたPG Databaseを使用します。"{}"は除いて置き換えてください。</font><br>
-③ 右上の`Disconnect`ボタンで一旦切断し、再接続します
+③ 右上の`Disconnect`ボタンで一旦切断し、再接続します<br>
 ④現在の時刻を確認<br>
 ```shell
 select CURRENT_TIMESTAMP;

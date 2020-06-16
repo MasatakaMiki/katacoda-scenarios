@@ -76,4 +76,4 @@
 <a href="https://developers.line.biz/console/" target="_blank">LINE Developers</a>のページに戻り、`Messaging API設定`をクリックします。そこに表示されているQRコードをLINEのアプリから読み取って友達になります。<br>
 ![be_friend](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_1_LINE/img/s0522_be_friend.jpg)
 
-これでトークルームのリッチメニューからもLIFFが起動するようになりました！
+これでこのボットのトークルームのリッチメニューからもLIFFが起動するようになりました！

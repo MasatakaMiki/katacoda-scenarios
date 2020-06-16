@@ -18,7 +18,8 @@ LIFFの作成時に必要となるので、アプリ名とURLを控えておい�
 
 3. 前のステップで準備したアプリ（リポジトリ）とherokuのアプリを紐づけます<br>
 ```shell
-heroku git:remote -a ldgq-20200617-name
-```{{copy}}
+heroku git:remote -a {herokuのアプリ名}
+```{{copy}}<br>
+<font color="red">※{herokuのアプリ名}部分は先程作成したherokuのアプリ名に、"{}"は除いて置き換えてください。</font><br>
 
 次のステップでは、LIFFを作っていきますよ！

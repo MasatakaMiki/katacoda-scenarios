@@ -76,9 +76,11 @@ git commit -m "deploy todo-list app"
 git push
 ```{{copy}}
 
-10. ブラウザから、タスクを完了させた場合、エラーメッセージが表示されます。これは、外部ブラウザで開かれている場合、LIFFのsendMessagesが使用できないため、条件分岐でエラーメッセージを表示するようにしているためです（todolist.js 181行目～）。LIFFからはメッセージが送れないので、友達になっているボットを利用して、ボットのトークルームにメッセージが送信されるようにしてみましょう。
+10. ToDoリストのアプリがデプロイされました。LINEアプリやブラウザで動作確認してみましょう。また、<a href="https://pgweb-demo.herokuapp.com/" target="_blank">pgweb</a>でテーブルのレコードの状態も確認してみましょう。<br>
 
-11. herokuの環境変数にボットの情報を設定します。チャネルシークレットとチャネルアクセストークンの2つを追加します。<br>
+11. ブラウザから、タスクを完了させた場合、エラーメッセージが表示されます。これは、外部ブラウザで開かれている場合、LIFFのsendMessagesが使用できないので、条件分岐でエラーメッセージを表示するようにしているためです（todolist.js 181行目～）。LIFFからはメッセージが送れないので、友達になっているボットを利用して、ボットのトークルームにメッセージが送信されるようにしてみましょう。
+
+12. herokuの環境変数にボットの情報を設定します。チャネルシークレットとチャネルアクセストークンの2つを追加します。<br>
 ```shell
 heroku config:set CHANNEL_SECRET={チャネルシークレット}
 ```{{copy}}
@@ -88,17 +90,20 @@ heroku config:set CHANNEL_ACCESS_TOKEN={チャネルアクセストークン}
 ```{{copy}}
 <font color="red">※{チャネルアクセストークン}部分は最初のシナリオで控えているチャネルアクセストークンに、"{}"は除いて置き換えてください。</font><br>
 
-12. package.jsonにライブラリを追加します<br>
+13. package.jsonにライブラリを追加します<br>
 ・LINE Messaging API SDK for nodejs(https://github.com/line/line-bot-sdk-nodejs)<br>
 ```shell
-$ npm install @line/bot-sdk --save
+npm install @line/bot-sdk --save
 ```{{copy}}
 
-13. サーバー側（./index.js）にルートを追加します。1行目、22～29行目、87～100行目のコメントアウトを解除します。<br>
+14. サーバー側（./index.js）にルートを追加します。1行目、22～29行目、87～100行目のコメントアウトを解除します。<br>
+![fix_pg](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0101_fix_pg.jpg)
+![fix_pg](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0102_fix_pg.jpg)
 
-14. LIFFのjs（./public/todolist.js）に外部ブラウザだった場合の処理を追加します。183行目と184行目をコメントアウトし、185～207行目のコメントアウトを解除します。<br>
+15. LIFFのjs（./public/todolist.js）に外部ブラウザだった場合の処理を追加します。183行目と184行目をコメントアウトし、185～207行目のコメントアウトを解除します。<br>
+![fix_pg](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0103_fix_pg.jpg)
 
-15. gitでherokuにデプロイします。gitのコマンドを3つ実行します。<br>
+16. gitでherokuにデプロイします。gitのコマンドを3つ実行します。<br>
 ```shell
 git add .
 ```{{copy}}
@@ -109,16 +114,17 @@ git commit -m "add external browser's sending message method"
 git push
 ```{{copy}}
 
-16. 【補足】<br>
-①ボットからのメッセージ送信は、送信者の名前やアイコンを変更することもできます。<br>
+17. 【補足】<br>
+①メッセージ送信は、送信者の名前やアイコンを変更することもできます。<br>
 ```shell
 client.pushMessage(hidden_userid, {
     type: 'text',
     text: message,
     sender: {
-    name: "MIKI",
-    iconUrl: "https://p62.f2.n0.cdn.getcloudapp.com/items/04uPNLeG/59UcuxelIy3u3Nc1584956046_1584956055.png?v=c586b91712e6400e8055dc46c7f30ac9",
-}
+        name: "MIKI",
+        iconUrl: "https://p62.f2.n0.cdn.getcloudapp.com/items/04uPNLeG/59UcuxelIy3u3Nc1584956046_1584956055.png?v=c586b91712e6400e8055dc46c7f30ac9",
+    }
+})
 ```{{copy}}<br>
 ②Flex Messageというものもあります。ちょっと長くなりますが・・・<br>
 ```shell
@@ -271,24 +277,23 @@ client.pushMessage(hidden_userid, {
     ],
     "flex": 0
   }
-}
+})
 ```{{copy}}<br>
-<a href="https://developers.line.biz/flex-simulator/" target="_blank">シミュレータ</a>があるので、簡単に作れます<br>
-<a href="https://developers.line.biz/ja/news/2020/06/09/flex-message-simulator-tutorial/" target="_blank">チュートリアル</a><br>
+<a href="https://developers.line.biz/flex-simulator/" target="_blank">シミュレータ</a>があるので、簡単に作れます。シミュレータに慣れるための<a href="https://developers.line.biz/ja/news/2020/06/09/flex-message-simulator-tutorial/" target="_blank">チュートリアル</a>も準備されています。<br>
 ③LIFFには、シェアターゲットピッカーという機能があります。これは、友だちやグループを指定して、メッセージを送信できる機能です。<br>
 ```shell
 liff.sendMessages(
-```<br>
+```
 の部分を<br>
 ```shell
 liff.shareTargetPicker(
-```{{copy}}<br>
+```{{copy}}
 に変えてみましょう<br>
 <br>
 LINE DevelopersのTwitter(@LINE_DEV)をフォローしておけば、API関連の更新情報をいち早く知ることができます！<br>
 
-17. LILFFアプリを公開しましょう。LINE DevelopersのLIFF（LINEログイン）の設定で、`非公開`をクリックして、`公開`にします。<br>
-
+18. LILFFアプリを公開しましょう。LINE DevelopersのLIFF（LINEログイン）の設定で、`非公開`をクリックして、`公開`にします。<br>
+![open_to_the_public](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_3_APP/img/s0104_open_to_the_public.jpg)
 
 以上、終了！<br>
 お疲れ様でした！！

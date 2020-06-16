@@ -13,7 +13,7 @@ heroku上でデータベースを構築しましょう
 4. 準備された、`Heroku Postgres`をクリックします。<br>
 ![create_db](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_2_DB/img/s0104_create_db.jpg)
 
-5. データベースの管理画面が開きますので、`Setings`をクリックし、`View Credentials...`ボタンをクリックします。<br>
+5. データベースの管理画面が開きますので、`Settings`をクリックし、`View Credentials...`ボタンをクリックします。<br>
 ![create_db](https://raw.githubusercontent.com/MasatakaMiki/katacoda-scenarios/master/ldgq_liff_todo_course/liff_todo_scenario_2_DB/img/s0105_create_db.jpg)
 
 6. Host、Database、User、Port、Passwordをメモしておきます。<br>
