@@ -1,17 +1,13 @@
 {
-  "title": "データベースの準備",
-  "description": "herokuにアプリを作成し、データベースの構築を行います",
+  "title": "herokuアプリの改造",
+  "description": "herokuのアプリをDB連携アプリに改造します",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "データベースを構築する",
+        "title": "herokuからリポジトリをcloneし、アプリを改造する",
         "text": "step1.md"
-      },
-      {
-        "title": "テーブルを作成する",
-        "text": "step2.md"
       }
     ],
     "intro": {

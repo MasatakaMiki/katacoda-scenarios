@@ -1,6 +1,6 @@
 {
   "title": "LINE LIFFとボットの準備",
-  "description": "LIFF(LINEログイン)と、それを起動するボット(LINE Messaging API)の設定を行います。",
+  "description": "LIFF(LINEログイン)と、それを起動するボット(LINE Messaging API)の設定を行います",
   "difficulty": "Beginner",
   "time": "30 minutes",
   "details": {

@@ -9,8 +9,13 @@
     },
     {
       "course_id": "liff_todo_scenario_2_DB",
-      "title": "herokuにアプリを作成し、データベースを構築しよう",
-      "description": "ターミナルとherokuの管理画面を使ってherokuにデータベースを作成します"
+      "title": "データベースを構築しよう",
+      "description": "データベースを作成し、テーブルを準備します"
+    },
+    {
+      "course_id": "liff_todo_scenario_3_APP",
+      "title": "DB連携アプリをつくってみよう",
+      "description": "スターターアプリをDB連携アプリに改造します"
     }
   ]
 }
