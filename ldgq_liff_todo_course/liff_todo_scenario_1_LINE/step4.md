@@ -14,7 +14,12 @@ heroku config:set MY_LIFF_ID=1234567890-aBcdefGH
 heroku config
 ```{{copy}}
 
-2. gitの初期設定を行います<br>
+2. herokuのタイムゾーンの変更もしておきます<br>
+```shell
+heroku config:add TZ=Asia/Tokyo
+```{{copy}}
+
+3. gitの初期設定を行います<br>
 ```shell
 git config --global user.email you@example.com
 ```{{copy}}
@@ -24,7 +29,7 @@ git config --global user.name your_name
 ```{{copy}}
 <font color="red">※your_name部分はご自身の名前に置き換えてください。</font><br>
 
-3. gitでherokuにデプロイします。gitのコマンドを3つ実行します。<br>
+4. gitでherokuにデプロイします。gitのコマンドを3つ実行します。<br>
 ```shell
 git add .
 ```{{copy}}
@@ -35,8 +40,8 @@ git commit -m "first commit"
 git push heroku master
 ```{{copy}}
 
-4. これでスターターアプリがデプロイされました。ブラウザでLIFF URLにアクセスしてみましょう。<br>
+5. これでスターターアプリがデプロイされました。ブラウザでLIFF URLにアクセスしてみましょう。<br>
 たくさんボタンがあるので、まずLog inして、色々クリックしてみてください。LIFFでできることが分かると思います。
 
-5. では、スマホのLINEアプリからも動かしてみましょう<br>
+6. では、スマホのLINEアプリからも動かしてみましょう<br>
 長くなりそうなので次のステップで・・・
